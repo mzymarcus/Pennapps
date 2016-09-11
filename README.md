@@ -10,7 +10,7 @@ My friends and I form a team of three:
 
 It is similar to a shooting game and it is totally implemented by C++; 
 
-To run the program, just download the picture folder(under path PennApps/BarrageGame/BarrageGame)and "BarrageGame.cpp" (path PennApps/BarrageGame/BarrageGame) to the same directory on your own computer, then compile the program or you can simply run the .exe file we provide under path path PennApps/BarrageGame;
+To run the program, just download the picture folder(under path PennApps/BarrageGame/BarrageGame) and "BarrageGame.cpp" (path PennApps/BarrageGame/BarrageGame) to the same directory on your own computer, then compile the program or you can simply run the .exe file we provide under path path PennApps/BarrageGame together with the picture folder;
 
 Hope you like it and enjoy playing the game; 
 
