@@ -25,7 +25,7 @@ There are five panels located from the top to the bottom on the game interface:
   - Show Panel; 
   - User Panel; 
 
-Stat panel is for showing some stats for the game. It include the HP value of the gift("gift") and the reward the user currently have("reward"). 
+Stat panel is for showing some stats for the game. It include the HP value of the gift("gift") and the reward the user currently have("rewards"). 
 
 Gift shows up in gift panel and it travels from one end to the other end but not way back. It is only a one-way trip for the gift; We use a car as a symbol of the gift in our game. 
 
