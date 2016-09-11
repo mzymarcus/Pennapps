@@ -74,7 +74,7 @@ public:
 			putimage(X - 50, Y - 50, &img);
 			char str[20];
 			//LOGFONT(FW_MEDIUM = 500);
-			sprintf_s(str, "enemy:  %d  ", life);
+			sprintf_s(str, "gift:  %d  ", life);
       		outtextxy(5, 5, str);
 		}
 	}
@@ -219,7 +219,7 @@ void self::move(){
 	setfillcolor(BLACK);
 
 	char str[50];
-	sprintf_s(str, "money:%5d", me.money);
+	sprintf_s(str, "rewards:%5d", me.money);
 	outtextxy(300, 5, str);
 }
 
@@ -381,14 +381,14 @@ void End(){
 		setfillcolor(WHITE); 
 		solidrectangle(0,0,400,640);
 		settextstyle(20, 10, _T("TimesNewRoman"));
-		char str[100], str1[20];
-		sprintf_s(str, "Congratulations! Here is the money you");
-		sprintf_s(str1, "got: money:  %d  ", me.money);
+		char str[100], str1[100];
+		sprintf_s(str, "Congratulations! You get all the money!");
+		sprintf_s(str1, "You have got:  %d  ", me.money);
 		outtextxy(0, 300, str);
 		outtextxy(0, 320, str1);
 	}
 
-	else{
+	else if(me.money == 0){
 		setfillcolor(WHITE); 
 		solidrectangle(0,0,400,640);
 		settextstyle(20, 10, _T("TimesNewRoman"));
@@ -398,6 +398,16 @@ void End(){
 		outtextxy(0, 300, str);
 		outtextxy(0, 320, str1);
 
+	}
+	else{
+		setfillcolor(WHITE); 
+		solidrectangle(0,0,400,640);
+		settextstyle(20, 10, _T("TimesNewRoman"));
+		char str[100], str1[100];
+		sprintf_s(str, "Good-job! Here is the money you");
+		sprintf_s(str1, "got: money:  %d  ", me.money);
+		outtextxy(0, 300, str);
+		outtextxy(0, 320, str1);
 	}
 	Sleep(5000);
 
