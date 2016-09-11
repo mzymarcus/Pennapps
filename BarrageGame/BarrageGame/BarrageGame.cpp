@@ -382,8 +382,8 @@ void End(){
 		solidrectangle(0,0,400,640);
 		settextstyle(20, 10, _T("TimesNewRoman"));
 		char str[100], str1[100];
-		sprintf_s(str, "Congratulations! You get all the money!");
-		sprintf_s(str1, "You have got:  %d  ", me.money);
+		sprintf_s(str, "Congratulations! You get all the rewards!");
+		sprintf_s(str1, "You have got: %d awards ", me.money);
 		outtextxy(0, 300, str);
 		outtextxy(0, 320, str1);
 	}
@@ -394,7 +394,7 @@ void End(){
 		settextstyle(20, 10, _T("TimesNewRoman"));
 		char str[100], str1[100];
 		sprintf_s(str, "Sorry! You have not got any");
-		sprintf_s(str1, "money, please have another try!");
+		sprintf_s(str1, "rewards, please have another try!");
 		outtextxy(0, 300, str);
 		outtextxy(0, 320, str1);
 
@@ -404,8 +404,8 @@ void End(){
 		solidrectangle(0,0,400,640);
 		settextstyle(20, 10, _T("TimesNewRoman"));
 		char str[100], str1[100];
-		sprintf_s(str, "Good-job! Here is the money you");
-		sprintf_s(str1, "got: money:  %d  ", me.money);
+		sprintf_s(str, "Good job! Here is the reward you");
+		sprintf_s(str1, "have got: %d awards ", me.money);
 		outtextxy(0, 300, str);
 		outtextxy(0, 320, str1);
 	}
